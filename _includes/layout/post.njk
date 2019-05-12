@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link rel="stylesheet" href="{{ '/css/normalize.css' | url }}">
-    <title>My Blog</title>
+    <title>{{ title }}</title>
   </head>
   <body>
-    <h1>{{ pageTitle }}</h1>
+    <h1>{{ title }}</h1>
     {{ content  | safe }}
   </body>
 </html>
