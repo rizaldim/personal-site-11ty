@@ -1,0 +1,24 @@
+---
+layout: layout/home.njk
+title: Home
+---
+<div class="introduction">
+  <h1 class="introduction-header">Hi, I'm Rizaldi</h1>
+  <p class="introduction-content">
+  I'm a software developer living in Jakarta.
+  Most of my work has been in front-end development,
+  either writing Android apps or website.
+  Currently I work for <a href="https://bridestory.com">Bridestory</a>.
+  </p>
+</div>
+
+<div class="articleList">
+  <h2 class="articleList-header">Posts</h2>
+  <ol class="articleList-list">
+  {% for post in collections.posts %}
+    <li>
+      <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+    </li>
+  {% endfor %}
+  </ol>
+</div>
