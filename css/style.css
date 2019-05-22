@@ -11,10 +11,10 @@ body {
 }
 
 .container {
-  width: 100%;
+  margin: 40px auto;
   max-width: 800px;
   padding: 0 5%;
-  margin: 40px auto;
+  width: 100%;
 }
 
 .introduction {
@@ -22,19 +22,17 @@ body {
 }
 
 .introduction-header {
-  margin-bottom: 1em;
-
   font-size: 3em;
   font-weight: 600;
   line-height: 1.2;
+  margin-bottom: 1em;
 }
 
 .introduction-content {
-  width: 100%;
-  max-width: 600px;
-  margin-bottom: 1em;
-
   line-height: 1.6;
+  margin-bottom: 1em;
+  max-width: 600px;
+  width: 100%;
 }
 
 .articleList {
@@ -55,9 +53,9 @@ body {
 }
 
 .articleList-itemDate {
-  width: 200px;
-  margin-left: 10px;
   font-size: .75em;
+  margin-left: 10px;
   text-align: right;
   vertical-align: bottom;
+  width: 200px;
 }
