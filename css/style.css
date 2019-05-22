@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: system-ui;
 }
@@ -5,7 +13,12 @@ body {
 .container {
   width: 100%;
   max-width: 800px;
+  padding: 0 5%;
   margin: 40px auto;
+}
+
+.introduction {
+  margin-bottom: 2em;
 }
 
 .introduction-header {
@@ -13,16 +26,18 @@ body {
 
   font-size: 3em;
   font-weight: 600;
+  line-height: 1.2;
 }
 
 .introduction-content {
   width: 100%;
   max-width: 600px;
+  margin-bottom: 1em;
+
   line-height: 1.6;
 }
 
 .articleList {
-  margin-top: 2em;
 }
 
 .articleList-header {
