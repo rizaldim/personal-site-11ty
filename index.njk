@@ -16,8 +16,13 @@ title: Home
   <h2 class="articleList-header">Posts</h2>
   <ol class="articleList-list">
   {% for post in collections.posts %}
-    <li>
-      <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+    <li class="articleList-listItem">
+      <a href="{{ post.url | url }}" class="articleList-itemLink">
+        {{ post.data.title }}
+      </a>
+      <time datetime="{{ post.date | readableDate("yyyy-LL-dd") }}" class="articleList-itemDate">
+        {{ post.date | readableDate("LLL dd, yyyy") }}
+      </time>
     </li>
   {% endfor %}
   </ol>
