@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="{{ '/css/reset.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/system-font.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
-    <title>{{ title or metadata.title }}</title>
+    <title>{{ title }} - {{ metadata.title }}</title>
   </head>
   <body>
     <div class="container">
-      {{ content  | safe }}
+    {{ content | safe }}
     </div>
   </body>
 </html>
