@@ -31,11 +31,8 @@ body {
 .introduction-content {
   line-height: 1.6;
   margin-bottom: 1em;
-  max-width: 600px;
+  max-width: 800px;
   width: 100%;
-}
-
-.articleList {
 }
 
 .articleList-header {
@@ -58,4 +55,10 @@ body {
   text-align: right;
   vertical-align: bottom;
   width: 200px;
+}
+
+.post-title {
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 1em;
 }
