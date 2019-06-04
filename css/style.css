@@ -57,8 +57,20 @@ body {
   width: 200px;
 }
 
-.post-title {
+.postHeader {
+  margin-bottom: 60px;
+}
+
+.postHeader-title {
   font-size: 3em;
   font-weight: 600;
-  margin-bottom: 1em;
+  margin-bottom: 10px;
+}
+
+.postHeader-date {
+  font-size: .875em;
+}
+
+.postContent p {
+  line-height: 1.6;
 }

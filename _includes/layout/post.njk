@@ -1,6 +1,11 @@
 ---
 layout: layout/base.njk
 ---
-<h1 class="post-title">{{ title }}</h1>
+<header class="postHeader">
+  <h1 class="postHeader-title">{{ title }}</h1>
+  <p class="postHeader-date">&#187; {{ date | readableDate("dd MMM yyyy") }}</p>
+</header>
 
-{{ content | safe }}
+<div class="postContent">
+  {{ content | safe }}
+</div>
