@@ -1,8 +1,7 @@
 const { DateTime } = require("luxon");
+const CleanCSS = require("clean-css");
 
 module.exports = function(eleventyConfig) {
-
-  eleventyConfig.addPassthroughCopy("css");
 
   eleventyConfig.addFilter("readableDate", (dateObj, fmt) => {
     if (fmt == undefined) {
@@ -11,8 +10,8 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat(fmt);
   });
 
-  return {
-    passthroughFileCopy: true
-  };
+  eleventyConfig.addFilter("cssmin", function(code) {
+    return new CleanCSS({}).minify(code).styles;
+  });
 
 };
