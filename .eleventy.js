@@ -1,7 +1,7 @@
-const { DateTime } = require("luxon");
-const CleanCSS = require("clean-css");
+import { DateTime } from "luxon";
+import CleanCSS from "clean-css";
 
-module.exports = function(eleventyConfig) {
+export default function(eleventyConfig) {
 
   eleventyConfig.addFilter("readableDate", (dateObj, fmt) => {
     if (fmt == undefined) {
