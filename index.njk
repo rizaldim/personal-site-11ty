@@ -2,28 +2,28 @@
 layout: layout/home.njk
 title: Home
 ---
-<div class="introduction">
-  <h1 class="introduction-header">Hi, I'm Rizaldi</h1>
-  <p class="introduction-content">
-  I'm a software developer living in Jakarta, Indonesia.
-  Most of my work has been in front-end development,
-  either writing Android apps or website.
-  Currently I work for <a href="https://bridestory.com">Bridestory</a>.
-  </p>
-</div>
+<header>
+	<h1>Hi, I'm Rizaldi</h1>
+	<p>
+	I'm a software developer living in Jakarta, Indonesia.
+	Most of my work has been in front-end development,
+	either writing Android apps or website.
+	Currently I work for <a href="https://bridestory.com">Bridestory</a>.
+	</p>
+</header>
 
-<div class="articleList">
-  <h2 class="articleList-header">Posts</h2>
-  <ol class="articleList-list">
-  {% for post in collections.posts %}
-    <li class="articleList-listItem">
-      <a href="{{ post.url | url }}" class="articleList-itemLink">
-        {{ post.data.title }}
-      </a>
-      <time datetime="{{ post.date | readableDate("yyyy-LL-dd") }}" class="articleList-itemDate">
-        {{ post.date | readableDate("LLL dd, yyyy") }}
-      </time>
-    </li>
-  {% endfor %}
-  </ol>
-</div>
+<section class="l-stack-small">
+	<h2>Posts</h2>
+	<ol>
+		{% for post in collections.posts %}
+			<li>
+				<a href="{{ post.url | url }}">
+					{{ post.data.title }}
+				</a>
+				<time datetime="{{ post.date | readableDate("yyyy-LL-dd") }}">
+					({{ post.date | readableDate("LLL dd, yyyy") }})
+				</time>
+			</li>
+		{% endfor %}
+	</ol>
+</section>

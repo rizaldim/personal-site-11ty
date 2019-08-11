@@ -1,0 +1,7 @@
+h1, h2, h3 {
+	color: #333;
+}
+
+h1 { font-size: var(--fs-larger); }
+
+h2 { font-size: var(--fs-large-2); }

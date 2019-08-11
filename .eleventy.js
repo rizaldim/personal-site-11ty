@@ -3,15 +3,15 @@ const CleanCSS = require("clean-css");
 
 module.exports = function(eleventyConfig) {
 
-  eleventyConfig.addFilter("readableDate", (dateObj, fmt) => {
-    if (fmt == undefined) {
-      fmt = "yyyy-LL-dd";
-    }
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat(fmt);
-  });
+	eleventyConfig.addFilter("readableDate", (dateObj, fmt) => {
+		if (fmt == undefined) {
+			fmt = "yyyy-LL-dd";
+		}
+		return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat(fmt);
+	});
 
-  eleventyConfig.addFilter("cssmin", function(code) {
-    return new CleanCSS({}).minify(code).styles;
-  });
+	eleventyConfig.addFilter("cssmin", function(code) {
+		return new CleanCSS({}).minify(code).styles;
+	});
 
 };
