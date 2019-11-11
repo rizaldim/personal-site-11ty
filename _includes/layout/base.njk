@@ -5,15 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 		{% set css %}
-			{% include "css/setting.css" %}
 			{% include "css/generic.reset.css" %}
 			{% include "css/generic.box-sizing.css" %}
-			{% include "css/element.root.css" %}
-			{% include "css/element.body.css" %}
-			{% include "css/element.header.css" %}
-			{% include "css/element.a.css" %}
-			{% include "css/element.text.css" %}
-			{% include "css/object.layout.css" %}
 		{% endset %}
 		<style type="text/css">{{ css | cssmin | safe }}</style>
 		<title>{{ title }} - {{ metadata.title }}</title>
