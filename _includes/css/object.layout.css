@@ -3,10 +3,7 @@
 	margin-bottom: 0;
 }
 
-.l-stack-small > * + * {
+.l-stack > * + * {
 	margin-top: 1.5rem;
 }
 
-.l-stack-large > * + * {
-	margin-top: 3rem;
-}

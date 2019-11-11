@@ -7,12 +7,17 @@
 		{% set css %}
 			{% include "css/generic.reset.css" %}
 			{% include "css/generic.box-sizing.css" %}
+			{% include "css/element.root.css" %}
+			{% include "css/element.body.css" %}
+			{% include "css/element.header.css" %}
+			{% include "css/element.text.css" %}
+			{% include "css/object.layout.css" %}
 		{% endset %}
 		<style type="text/css">{{ css | cssmin | safe }}</style>
 		<title>{{ title }} - {{ metadata.title }}</title>
 	</head>
 	<body>
-		<div class="container l-stack-large">
+		<div class="container l-stack">
 		{{ content | safe }}
 		</div>
 	</body>
