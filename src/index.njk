@@ -1,13 +1,13 @@
 ---
-layout: layout/home.njk
+layout: layout/base.njk
 title: Home
 ---
 <h1>Rizaldi Martaputra's Personal Website</h1>
 
-<section class="l-stack-small">
+<section>
 	<h2>Posts</h2>
-	<ol>
-		{% for post in collections.posts %}
+	<ol class="posts">
+		{%- for post in collections.posts -%}
 			<li>
 				<a href="{{ post.url | url }}">
 					{{ post.data.title }}
@@ -16,6 +16,6 @@ title: Home
 					({{ post.date | readableDate("LLL dd, yyyy") }})
 				</time>
 			</li>
-		{% endfor %}
+		{%- endfor -%}
 	</ol>
 </section>
