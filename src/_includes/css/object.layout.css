@@ -1,9 +1,0 @@
-[class^='l-stack'] > * {
-	margin-top: 0;
-	margin-bottom: 0;
-}
-
-.l-stack > * + * {
-	margin-top: 1.5rem;
-}
-
