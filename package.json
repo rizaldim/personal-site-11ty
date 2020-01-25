@@ -4,16 +4,19 @@
 	"description": "My personal website made using Eleventy",
 	"main": "index.js",
 	"scripts": {
-		"serve": "npx @11ty/eleventy --serve",
-		"build": "npx @11ty/eleventy"
+		"serve": "concurrently --kill-others \"gulp\" \"npx @11ty/eleventy --serve\"",
+		"build": "rm -rfv _site/* && gulp css && npx @11ty/eleventy"
 	},
 	"author": "",
 	"license": "MIT",
 	"devDependencies": {
-		"@11ty/eleventy": "^0.9.0",
+		"@11ty/eleventy": "^0.10.0",
+		"concurrently": "^5.0.2",
+		"gulp": "^4.0.2",
+		"gulp-sass": "^4.0.2",
 		"luxon": "^1.21.3"
 	},
 	"dependencies": {
-		"clean-css": "^4.2.1"
+		"clean-css": "^4.2.2"
 	}
 }

@@ -2,7 +2,7 @@ const { DateTime } = require("luxon");
 const CleanCSS = require("clean-css");
 
 module.exports = function(eleventyConfig) {
-
+	eleventyConfig.setUseGitIgnore(false);
 	eleventyConfig.addFilter("readableDate", (dateObj, fmt) => {
 		if (fmt == undefined) {
 			fmt = "yyyy-LL-dd";
