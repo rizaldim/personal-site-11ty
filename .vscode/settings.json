@@ -1,22 +1,26 @@
 {
-    "[html]": {
-        "editor.tabSize": 2,
-        "editor.insertSpaces": false
-    },
-    "[nunjucks]": {
-        "editor.tabSize": 2,
-        "editor.insertSpaces": false
-    },
-    "[css]": {
-        "editor.tabSize": 2,
-        "editor.insertSpaces": false
-    },
-    "[javascript]": {
-        "editor.tabSize": 2,
-        "editor.insertSpaces": false
-    },
-    "[scss]": {
-        "editor.tabSize": 2,
-        "editor.insertSpaces": false
-    }
+	"[json]": {
+		"editor.tabSize": 2,
+		"editor.insertSpaces": false
+	},
+	"[html]": {
+		"editor.tabSize": 2,
+		"editor.insertSpaces": false
+	},
+	"[nunjucks]": {
+		"editor.tabSize": 2,
+		"editor.insertSpaces": false
+	},
+	"[css]": {
+		"editor.tabSize": 2,
+		"editor.insertSpaces": false
+	},
+	"[javascript]": {
+		"editor.tabSize": 2,
+		"editor.insertSpaces": false
+	},
+	"[scss]": {
+		"editor.tabSize": 2,
+		"editor.insertSpaces": false
+	}
 }
